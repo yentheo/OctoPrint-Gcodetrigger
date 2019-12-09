@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_gcodetrigger/templates *
+recursive-include octoprint_gcodetrigger/translations *
+recursive-include octoprint_gcodetrigger/static *
