@@ -59,7 +59,7 @@ class GcodetriggerPlugin(octoprint.plugin.SettingsPlugin,
 	def handle_camera_trigger(self, comm_instance, phase, cmd, cmd_type, gcode, *args, **kwargs):
 		if gcode and gcode == "M240":
 			self._logger.info("Just sent M240: {cmd}".format(**locals()))
-			contents = urllib2.urlopen("http://192.168.1.200:5000/api/trigger-camera").read()
+			contents = urllib2.urlopen("http://192.168.1.55:5000/api/trigger-camera").read()
 
 
 
